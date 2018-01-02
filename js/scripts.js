@@ -1,7 +1,10 @@
-//scripts.js
-
-var a = prompt('Enter base a');
-var h = prompt('Enter height h');
-var triangleArea = a * h / 2;
-alert('Triangle field: ' + triangleArea);
-console.log('Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea);
+function drawTree(heightTree) {
+    for(var i = 0; i <= heightTree; i++) {
+        var star = ' ';
+            for(var j = 0; j <= i; j++) {
+            star += "*";
+            }
+            console.log(star);
+            }
+    }
+    drawTree(6);
